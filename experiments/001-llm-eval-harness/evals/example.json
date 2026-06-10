@@ -1,0 +1,16 @@
+{
+  "id": "rag-001-syracuse-mascot",
+  "model": "gpt-4o-mini",
+  "context": "Syracuse University's athletic teams are known as the Orange. The mascot is Otto the Orange.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Answer using only the provided context. If the answer is not in the context, say you don't know."
+    },
+    {
+      "role": "user",
+      "content": "Context: Syracuse University's athletic teams are known as the Orange. The mascot is Otto the Orange.\n\nQuestion: What is the mascot of Syracuse University?"
+    }
+  ],
+  "expected": "The mascot of Syracuse University is Otto the Orange."
+}
