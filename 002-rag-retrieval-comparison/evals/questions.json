@@ -1,0 +1,72 @@
+[
+  {
+    "id": "sem-1",
+    "type": "semantic",
+    "question": "How can I efficiently handle many network requests concurrently in Python?",
+    "expected_chunk_ids": ["python_async::c000", "python_async::c001"],
+    "notes": "Paraphrases 'asyncio for I/O-bound workloads' without using the word asyncio."
+  },
+  {
+    "id": "sem-2",
+    "type": "semantic",
+    "question": "What's the right pattern for cleaning up database connections in a web endpoint?",
+    "expected_chunk_ids": ["fastapi_di::c001"],
+    "notes": "Answer is the yield-based dependency pattern; question avoids 'Depends' and 'yield'."
+  },
+  {
+    "id": "sem-3",
+    "type": "semantic",
+    "question": "Which HTTP response should I return when a client sends a malformed request body?",
+    "expected_chunk_ids": ["http_status::c000"],
+    "notes": "Answer is 400; question avoids the number and the word 'bad'."
+  },
+  {
+    "id": "sem-4",
+    "type": "semantic",
+    "question": "How do I speed up time-range queries on a huge append-only table without a giant index?",
+    "expected_chunk_ids": ["postgres_indexes::c001"],
+    "notes": "Answer is BRIN; question avoids BRIN, block, and range keywords."
+  },
+  {
+    "id": "kw-1",
+    "type": "keyword",
+    "question": "What does asyncio.gather do?",
+    "expected_chunk_ids": ["python_async::c001"],
+    "notes": "Exact function name."
+  },
+  {
+    "id": "kw-2",
+    "type": "keyword",
+    "question": "What is a GIN index?",
+    "expected_chunk_ids": ["postgres_indexes::c000", "postgres_indexes::c001"],
+    "notes": "Exact acronym; content straddles chunk boundary."
+  },
+  {
+    "id": "kw-3",
+    "type": "keyword",
+    "question": "What is HTTP 422?",
+    "expected_chunk_ids": ["http_status::c000"],
+    "notes": "Exact status code."
+  },
+  {
+    "id": "kw-4",
+    "type": "keyword",
+    "question": "What is Depends() in FastAPI?",
+    "expected_chunk_ids": ["fastapi_di::c000"],
+    "notes": "Exact function name."
+  },
+  {
+    "id": "mixed-1",
+    "type": "mixed",
+    "question": "How do I check that a RAG answer doesn't invent facts using LLM-as-judge?",
+    "expected_chunk_ids": ["llm_evals::c001"],
+    "notes": "LLM-as-judge is an exact term; the rest paraphrases groundedness."
+  },
+  {
+    "id": "mixed-2",
+    "type": "mixed",
+    "question": "Why does exact-match fail for testing LLM outputs?",
+    "expected_chunk_ids": ["llm_evals::c000"],
+    "notes": "'exact-match' is a keyword; the rest paraphrases nondeterminism."
+  }
+]
