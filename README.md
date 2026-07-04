@@ -33,6 +33,8 @@ engineering-lab/
 |---|-----------|------------------|-------|
 | 001 | [llm-eval-harness](./experiments/001-llm-eval-harness) | Structured testing for non-deterministic LLM outputs | Python, OpenAI |
 
+| 002 | [rag-retrieval-comparison](./experiments/002-rag-retrieval-comparison) | Dense vs BM25 vs hybrid RRF, measured on recall@k | Python, OpenAI, ChromaDB, rank-bm25 |
+
 ---
 
 📫 psojitraswe@gmail.com &nbsp;·&nbsp; 🌐 [parthsojitra.dev](https://parthsojitra.dev)
